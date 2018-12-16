@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do List</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1>To do List</h1>
+	<div class="row">
+		<div class="col">
+			<form id="new-task-form">
+				<label>Add a new Task</label>
+				<input type="text" name="New-task" value='' id='new-task' placeholder="Buy eggs">
+				<select id="select">
+					<option value="sport" class="selector" id="selection-sport">Sport</option>
+					<option value="social" class="selector" id="selection-social">Social</option>
+					<option value="work" class="selector" id="selection-work">Work</option>
+					<option value="home" class="selector" id="selection-home">Home</option>
+					<option value="studies" class="selector" id="selection-sport">Studies</option>
+				</select>
+				<button type="submit" class="btn btn-primary">Add</button>
+			</form>
+		</div>
+		<br><hr>
+		<div class="col">
+			<label>Name of Type: </label>
+			<input type="text" name="new-type" value='' id='new-type' placeholder="house">
+			<br>
+			<label>Some Color: </label>
+			<input type="text" name="new-type-color" placeholder="blue" id='new-type-color'>
+			<br>
+			<button type="submit" id='create-new-type' class="btn btn-primary">Create New Type</button>
+		</div>
+		<!-- <button type="submit" id='order-alpha' class="btn btn-primary">Order Alphabetically</button> -->
+		
+	</div>
+	<hr>
+	<button type="submit" id='delete-all' class="btn btn-primary">Delete All</button>
+	<button type="submit" id='delete-select' class="btn btn-primary">Delete Selected Tasks</button>
+
+
+	<hr>
+
+	<ul id="all-tasks"></ul>
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
